@@ -1,10 +1,16 @@
+import axios from 'axios'
 import React from 'react'
 
 const App = () => {
+  axios.post('https://picsum.photos/v2/list?page=2&limit=100')
+  
 
   const getData = ()=>{
-  console.log("data is fetched")
+
+   console.log("data is fetched")
+  
   }
+
   return (
     <div className='bg-black h-screen p-4 text-white'>
      <button
